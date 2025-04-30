@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Student Form</h2>
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="course" placeholder="Course" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3>Fetched Student Data</h3>
+    <button onclick="fetchStudents()">Fetch Students</button>
+    <ul id="studentList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
